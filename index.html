@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Issouf</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Mon Portfolio</h1>
+
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#apropos">À propos</a>
+<a href="#travail">Travail</a>
+<a href="#cv">CV</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section id="accueil">
+
+<h2>Accueil</h2>
+<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Photo de profil" class="profile-pic">
+<p>Bienvenue sur mon portfolio. Je suis Issouf, apprenant développeur web.</p>
+
+</section>
+
+<section id="apropos">
+
+<h2>À propos</h2>
+<p>Je suis passionné par le développement web.</p>
+
+<h3>Compétences</h3>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Git & GitHub</li>
+</ul>
+
+<audio controls>
+<source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<h3>Ma présentation vidéo</h3>
+<video controls width="320">
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+Votre navigateur ne supporte pas la balise vidéo.
+</video>
+
+</section>
+
+<section id="travail">
+
+<h2>Mon travail</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Projet</th>
+<th>Technologie</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Portfolio</td>
+<td>HTML CSS</td>
+</tr>
+
+<tr>
+<td>Projet Git</td>
+<td>GitHub</td>
+</tr>
+</tbody>
+
+</table>
+
+<h3>Démo Projet</h3>
+<video controls width="320">
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+Votre navigateur ne supporte pas la balise vidéo.
+</video>
+
+</section>
+
+<section id="cv">
+
+<h2>Mon CV</h2>
+
+<p>Télécharger mon CV :</p>
+
+<a href="mon-cv.pdf" download>Télécharger CV</a>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<form>
+
+<label for="nom">Nom</label>
+<input type="text" id="nom" name="nom">
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email">
+
+<label for="message">Message</label>
+<textarea id="message" name="message"></textarea>
+
+<button type="submit">Envoyer</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>© 2026 Portfolio Issouf</p>
+
+</footer>
+
+<script>
+    // Petit script pour rendre le formulaire dynamique
+    document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Empêche le rechargement de la page
+        
+        // Récupérer le nom pour personnaliser le message
+        const nom = document.getElementById('nom').value;
+        
+        alert(`Merci ${nom} ! Votre message a bien été envoyé (simulation).`);
+        
+        this.reset(); // Vide les champs du formulaire
+    });
+</script>
+
+</body>
+</html>
