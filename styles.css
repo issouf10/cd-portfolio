@@ -1,25 +1,153 @@
-body{
-font-family:'Roboto', sans-serif;
-margin:0;
+/* ============================
+   Police et body
+============================ */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    line-height: 1.6;
 }
 
-nav ul{
-list-style:none;
-padding:0;
+/* ============================
+   Header et navigation
+============================ */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }
 
-nav ul li{
-display:inline;
-margin-right:20px;
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
 }
 
-nav a{
-text-decoration:none;
-color:black;
-font-weight:bold;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.profile-pic{
-width:150px;
-border-radius:50%;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li:hover a {
+    color: #007BFF;
+}
+
+/* ============================
+   Sections
+============================ */
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* ============================
+   Liste de compétences
+============================ */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* ============================
+   Table des projets
+============================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* ============================
+   Média (images, vidéos, audio)
+============================ */
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+video, audio {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+/* ============================
+   Formulaire contact
+============================ */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* ============================
+   Footer
+============================ */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
